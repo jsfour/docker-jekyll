@@ -1,4 +1,4 @@
-# Docker Jekyll Setup
+# Docker Jekyll
 
 ## Installation
 1. Install [Docker](https://docs.docker.com/engine/installation/)
@@ -13,7 +13,9 @@
   ```
   docker-compose run build
   ```
-2. The built site is in the "_site" directory
+2. The built site is in the _site directory
+
+TODO: Also explain how to deploy on GitHub sites
 
 ## Helpful commands:
 1. Draft new post
