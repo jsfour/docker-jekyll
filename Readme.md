@@ -18,20 +18,27 @@
 TODO: Also explain how to deploy on GitHub sites
 
 ## Helpful commands:
-1. Draft new post
+#### Draft new post
+
   ```
   docker-compose run draft "My New Page"
   ```
-2. Publish a post
+
+#### Publish a post
+
   ```
   # --date is optional
   docker-compose run publish _drafts/my-new-draft.md --date 2014-01-24
   ```
-3. Unpublish a post
+
+#### Unpublish a post
+
   ```
   docker-compose run unpublish _posts/2014-01-24-my-new-draft.md
   ```
-4. Check SEO
+
+#### Check SEO
+
   ```
   # -k are the keywords to check
   # -p is the post
