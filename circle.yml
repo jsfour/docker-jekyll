@@ -1,0 +1,18 @@
+machine:
+  ruby:
+    version: 2.3.0
+
+dependencies:
+  override:
+    - bundle install
+    - bundle exec jekyll build
+
+test:
+  override:
+    - echo "This is the only test and it does nothing"
+
+deployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync ./_site s3://{{REPLACE WITH BUCKET}}/blog --delete
